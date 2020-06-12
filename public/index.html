@@ -7,7 +7,7 @@ based on https://plot.ly/javascript/getting-started/
 <html>
 <head>
   <meta charset="utf-8"></head>
-  <script src="https://cdn.rawgit.com/hanecak/viz-data_catalog_stats-dataset_count/master/plotly-latest.min.js"></script>
+  <script src="plotly-latest.min.js"></script>
 </head>
 <body>
 
@@ -35,7 +35,7 @@ var selectorOptions = {
   }],
 };
 
-Plotly.d3.csv('https://hanecak.github.io/data_data-catalog-stats/data-catalog-stats-all-dataset_count.csv', function(err, rows) {
+Plotly.d3.csv('https://gitlab.com/opendatask/data-catalog-stats/-/raw/master/data-catalog-stats-all-dataset_count.csv', function(err, rows) {
   var catalogs = [];
   var data = [];
   var layout = {
